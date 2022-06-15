@@ -14,13 +14,15 @@
             text-align: center;
             margin-bottom: 4rem;
             & > h5 {
+                font-family: "coolvetica";
                 color: #fff;
-                font-weight: 800;
-                font-size: 2.5rem;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 58px;
             }
             & > p {
                 color: rgba(255, 255, 255, 0.4);
-                font-weight: 450;
+                font-weight: 400;
                 font-size: 1rem;
                 line-height: 160%;
                 margin: 20px 0 32px 0;

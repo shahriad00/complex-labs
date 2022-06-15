@@ -74,3 +74,11 @@ $breakpoints-down: (
         background-color: transparent;
     }
 }
+
+@mixin centerElement($height, $width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+    width: $width;
+}

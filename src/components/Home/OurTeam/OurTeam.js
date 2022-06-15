@@ -16,19 +16,19 @@ const TEAM = [
         id: 2,
         img : team2,
         name : 'Joshua Jack',
-        position : 'Chief executive officer'
+        position : 'Chief information officer'
     },
     {
         id: 3,
         img : team3,
         name : 'Ryan Turner',
-        position : 'Chief executive officer'
+        position : 'Chief technology officer'
     },
     {
         id: 4,
         img : team4,
         name : 'Pasquale Scaife',
-        position : 'Chief executive officer'
+        position : 'Chief product officer'
     },
 ]
 

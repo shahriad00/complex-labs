@@ -11,10 +11,12 @@
         &-left {
             flex: 1;
             & > h2 {
-                font-weight: 700;
+                font-family: "coolvetica";
+                font-weight: 400;
                 font-size: 48px;
                 line-height: 110%;
                 & > span {
+                    font-family: "coolvetica";
                     color: $primary-color;
                 }
             }
@@ -38,8 +40,9 @@
             .communication-single {
                 max-width: 230px;
                 & > h5 {
-                    font-weight: 800;
-                    font-size: 20px;
+                    font-family: "coolvetica";
+                    font-weight: 400;
+                    font-size: 18px;
                     line-height: 24px;
                     margin: 25px 0 15px 0;
                 }
