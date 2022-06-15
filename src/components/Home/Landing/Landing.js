@@ -1,7 +1,7 @@
 import cLogo from '../../../assets/icons/C.svg';
-import discordLogo from '../../../assets/icons/Discord.svg';
+import discordLogo from '../../../assets/icons/Discord.png';
 import juiceLogo from "../../../assets/icons/Juice.svg";
-import landingImg from '../../../assets/images/Mok.svg';
+import landingImg from '../../../assets/images/Mok.png';
 
 const Landing = () => {
   return (

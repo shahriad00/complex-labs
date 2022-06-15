@@ -62,7 +62,7 @@
             left: calc(2vw + 10px);
             animation: floating 1.5s alternate infinite;
             @media (min-width: 1440px) {
-                left: calc(10vw + 25px);
+                left: calc(10vw + 35px);
             }
         }
         .juiceLogo {
@@ -71,7 +71,7 @@
             right: calc(2vw + 40px);
             animation: floating 1s alternate infinite;
             @media (min-width: 1440px) {
-                right: calc(10vw + 25px);
+                right: calc(10vw + 35px);
             }
         }
     }
