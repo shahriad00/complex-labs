@@ -1,0 +1,87 @@
+.landing-section {
+    padding: 4rem 0;
+    &-header {
+        position: relative;
+        text-align: center;
+        & > h1 {
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 110%;
+            color: $dark-text;
+            & > span {
+                color: $primary-color;
+            }
+        }
+        & > p {
+            padding: 24px 0;
+            font-style: normal;
+            font-weight: 450;
+            font-size: 20px;
+            line-height: 25px;
+            color: $dark-text;
+        }
+        .start-btn {
+            display: inline-block;
+            @include SecondaryBtn(12px);
+            font-weight: 700;
+            padding: 15px 48px;
+            margin-top: 30px;
+        }
+    }
+    .c-logo1 {
+        position: absolute;
+        top: 110px;
+        left: calc(2vw + 15px);
+        animation: floating 1s alternate infinite;
+        @media (min-width: 1440px) {
+            left: calc(10vw + 25px);
+        }
+    }
+    .c-logo2 {
+        position: absolute;
+        top: 40px;
+        right: calc(2vw + 20px);
+        animation: floating 1.5s alternate infinite;
+        @media (min-width: 1440px) {
+            right: calc(10vw + 25px);
+        }
+    }
+    &-body {
+        position: relative;
+        padding: 1rem 2rem;
+        .landing-img {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 954px;
+        }
+        .discordLogo {
+            position: absolute;
+            top: 180px;
+            left: calc(2vw + 10px);
+            animation: floating 1.5s alternate infinite;
+            @media (min-width: 1440px) {
+                left: calc(10vw + 25px);
+            }
+        }
+        .juiceLogo {
+            position: absolute;
+            top: 140px;
+            right: calc(2vw + 40px);
+            animation: floating 1s alternate infinite;
+            @media (min-width: 1440px) {
+                right: calc(10vw + 25px);
+            }
+        }
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(8px);
+    }
+}
