@@ -1,5 +1,10 @@
 .landing-section {
     padding: 4rem 0;
+    background-image: url("../../../assets/images/Background.png");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &-header {
         position: relative;
         text-align: center;
@@ -32,7 +37,7 @@
         position: absolute;
         top: 110px;
         left: calc(2vw + 15px);
-        animation: floating 1s alternate infinite;
+        animation: floating 1.2s alternate infinite;
         @media (min-width: 1440px) {
             left: calc(10vw + 25px);
         }
@@ -41,7 +46,7 @@
         position: absolute;
         top: 40px;
         right: calc(2vw + 20px);
-        animation: floating 1.5s alternate infinite;
+        animation: floating 1.7s alternate infinite;
         @media (min-width: 1440px) {
             right: calc(10vw + 25px);
         }
@@ -60,7 +65,7 @@
             position: absolute;
             top: 180px;
             left: calc(2vw + 10px);
-            animation: floating 1.5s alternate infinite;
+            animation: floating 1.4s alternate infinite;
             @media (min-width: 1440px) {
                 left: calc(10vw + 35px);
             }

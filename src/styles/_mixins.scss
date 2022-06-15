@@ -46,7 +46,7 @@ $breakpoints-down: (
 }
 
 @mixin PrimaryBtn($borderRadius) {
-    background-color: #fff;
+    background-color: transparent;
     padding: 9px 24px;
     font-size: 16px;
     border-radius: $borderRadius;
@@ -71,6 +71,6 @@ $breakpoints-down: (
     &:hover {
         border: 1px solid $primary-color;
         color: $primary-color;
-        background-color: #fff;
+        background-color: transparent;
     }
 }

@@ -1,0 +1,58 @@
+.news-letter {
+    padding: 120px 0;
+    &-wrapper {
+        background-image: url("../../../assets/images/Nft.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 535px;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > div {
+            text-align: center;
+            & > h5 {
+                color: #fff;
+                font-weight: 800;
+                font-size: 48px;
+            }
+            & > p {
+                color: rgba(255, 255, 255, 0.6);
+                font-weight: 450;
+                font-size: 16px;
+                line-height: 160%;
+                margin: 20px 0 32px 0;
+            }
+            .email-group {
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+                border: 1px solid #4a4e5f;
+                border-radius: 8px;
+                .email-input {
+                    width: 280px;
+                    height: 56px;
+                    padding: 0 10px 0 15px;
+                    border: none;
+                    color: #fff;
+                    font-size: 18px;
+                    background-color: transparent;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                & > span {
+                    height: 56px;
+                    width: 158px;
+                    display: grid;
+                    place-items: center;
+                    border-radius: 8px;
+                    color: #fff;
+                    background-color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

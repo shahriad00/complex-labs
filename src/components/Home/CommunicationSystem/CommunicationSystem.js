@@ -32,44 +32,44 @@ const COMMU_INFO = [
 
 const CommunicationSystem = () => {
   return (
-    <section className='communication-system container'>
-        <div className="communication-system-upper">
-            <div className="communication-system-upper-left">
-                <h2>
-                    We are building both an inhouse <span>peer to peer communication</span> system
-                </h2>
-                <p>
-                    readable content page when looking at its layout point 
-                    of using Lorem Ipsum is that it has a more-less normal distribution fact that a reader.
-                </p>
+    <section className='communication-system'>
+        <div className="container">
+            <div className="communication-system-upper">
+                <div className="communication-system-upper-left">
+                    <h2>
+                        We are building both an inhouse <span>peer to peer communication</span> system
+                    </h2>
+                    <p>
+                        readable content page when looking at its layout point 
+                        of using Lorem Ipsum is that it has a more-less normal distribution fact that a reader.
+                    </p>
+                </div>
+                <div className="communication-system-upper-right">
+                    {
+                        COMMU_INFO.map((info,i)=>(
+                            <div key={i} className="communication-single">
+                                <img src={info.img} alt=""/>
+                                <h5>{info.title}</h5>
+                                <p>{info.info}</p>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-            <div className="communication-system-upper-right">
-                {
-                    COMMU_INFO.map((info,i)=>(
-                        <div key={i} className="communication-single">
-                            <img src={info.img} alt=""/>
-                            <h5>{info.title}</h5>
-                            <p>{info.info}</p>
-                        </div>
-                    ))
-                }
-                
-            
-            </div>
-        </div>
-        <div className="communication-system-bottom">
-            <div className="communication-system-bottom-left">
-                <img src={mokup} alt="" />
-            </div>
-            <div className="communication-system-bottom-right">
-                <h2>
-                    We are building both an inhouse <span>peer to peer communication</span> system
-                </h2>
-                <p>
-                    readable content page when looking at its layout point 
-                    of using Lorem Ipsum is that it has a more-less normal distribution fact that a reader.
-                </p>
-                <span className='communication-btn'>Start Now</span>
+            <div className="communication-system-bottom">
+                <div className="communication-system-bottom-left">
+                    <img src={mokup} alt="" />
+                </div>
+                <div className="communication-system-bottom-right">
+                    <h2>
+                        We are building both an inhouse <span>peer to peer communication</span> system
+                    </h2>
+                    <p>
+                        readable content page when looking at its layout point 
+                        of using Lorem Ipsum is that it has a more-less normal distribution fact that a reader.
+                    </p>
+                    <span className='communication-btn'>Start Now</span>
+                </div>
             </div>
         </div>
     </section>
