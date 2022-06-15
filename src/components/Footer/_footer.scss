@@ -16,6 +16,7 @@
             font-weight: 400;
             line-height: 58px;
             color: #fff;
+            max-width: 580px;
             @include breakpoint-down(small) {
                 font-size: 2rem;
             }
@@ -105,7 +106,6 @@
             & > span {
                 color: #acabb3;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 gap: 16px;
                 &:hover {

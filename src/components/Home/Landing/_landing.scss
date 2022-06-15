@@ -49,6 +49,7 @@
             left: calc(10vw + 25px);
         }
         @include breakpoint-down(small) {
+            top: 130px;
             left: 2px;
         }
     }
@@ -61,7 +62,7 @@
             right: calc(10vw + 25px);
         }
         @include breakpoint-down(small) {
-            top: 140px;
+            top: 170px;
             right: 2px;
         }
     }
@@ -84,7 +85,7 @@
                 left: calc(10vw + 35px);
             }
             @include breakpoint-down(small) {
-                top: 200px;
+                top: 160px;
                 right: 2px;
             }
         }
@@ -97,7 +98,7 @@
                 right: calc(10vw + 35px);
             }
             @include breakpoint-down(small) {
-                top: 200px;
+                top: 150px;
                 right: 2px;
             }
         }

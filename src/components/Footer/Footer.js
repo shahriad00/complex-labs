@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="footer-header">
                 <img src={logo} alt="" />
                 <h5>
-                    Complex Labs will onboard <br/><span>Web2 organizations</span> to Web3.
+                    Complex Labs will onboard <span> Web2 organizations </span> to Web3.
                 </h5>
             </div>
             <div className="footer-links-wrapper">
