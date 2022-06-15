@@ -1,5 +1,8 @@
 .landing-section {
     padding: 5rem 0 4rem 0;
+    @include breakpoint-down(small) {
+        padding: 3rem 0;
+    }
     background-image: url("../../../assets/images/Background.png");
     min-height: 100vh;
     background-position: center;
@@ -11,6 +14,9 @@
         & > h1 {
             font-family: "coolvetica";
             font-size: 72px;
+            @include breakpoint-down(small) {
+                font-size: 32px;
+            }
             font-weight: 400;
             line-height: 110%;
             color: $deep-dark-text;
@@ -39,8 +45,11 @@
         top: 110px;
         left: calc(2vw + 15px);
         animation: floating 1.2s alternate infinite;
-        @media (min-width: 1440px) {
+        @include breakpoint-up(xlarge) {
             left: calc(10vw + 25px);
+        }
+        @include breakpoint-down(small) {
+            left: 2px;
         }
     }
     .c-logo2 {
@@ -48,8 +57,12 @@
         top: 40px;
         right: calc(2vw + 20px);
         animation: floating 1.7s alternate infinite;
-        @media (min-width: 1440px) {
+        @include breakpoint-up(xlarge) {
             right: calc(10vw + 25px);
+        }
+        @include breakpoint-down(small) {
+            top: 140px;
+            right: 2px;
         }
     }
     &-body {
@@ -67,8 +80,12 @@
             top: 180px;
             left: calc(2vw + 10px);
             animation: floating 1.4s alternate infinite;
-            @media (min-width: 1440px) {
+            @include breakpoint-up(xlarge) {
                 left: calc(10vw + 35px);
+            }
+            @include breakpoint-down(small) {
+                top: 200px;
+                right: 2px;
             }
         }
         .juiceLogo {
@@ -76,8 +93,12 @@
             top: 140px;
             right: calc(2vw + 40px);
             animation: floating 1s alternate infinite;
-            @media (min-width: 1440px) {
+            @include breakpoint-up(xlarge) {
                 right: calc(10vw + 35px);
+            }
+            @include breakpoint-down(small) {
+                top: 200px;
+                right: 2px;
             }
         }
     }

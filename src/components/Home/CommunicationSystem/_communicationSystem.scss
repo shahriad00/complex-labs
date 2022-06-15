@@ -1,5 +1,8 @@
 .communication-system {
     padding: 120px 0;
+    @include breakpoint-down(small) {
+        padding: 60px 0;
+    }
     background-image: url("../../../assets/images/Background2.png");
     height: 100%;
     background-position: center;
@@ -7,14 +10,25 @@
     background-size: auto;
     &-upper {
         display: flex;
+        flex-wrap: wrap;
         gap: 100px;
+        @include breakpoint-down(small) {
+            justify-content: center;
+        }
         &-left {
             flex: 1;
+            @include breakpoint-down(small) {
+                text-align: center;
+                min-width: 300px;
+            }
             & > h2 {
                 font-family: "coolvetica";
                 font-weight: 400;
                 font-size: 48px;
                 line-height: 110%;
+                @include breakpoint-down(small) {
+                    font-size: 32px;
+                }
                 & > span {
                     font-family: "coolvetica";
                     color: $primary-color;
@@ -34,11 +48,17 @@
             flex: 1;
             display: flex;
             justify-content: space-between;
+            @include breakpoint-down(small) {
+                justify-content: center;
+            }
             align-items: center;
             flex-wrap: wrap;
             gap: 45px;
             .communication-single {
                 max-width: 230px;
+                @include breakpoint-down(small) {
+                    text-align: center;
+                }
                 & > h5 {
                     font-family: "coolvetica";
                     font-weight: 400;
@@ -58,17 +78,30 @@
     &-bottom {
         display: flex;
         align-items: center;
+        @include breakpoint-down(small) {
+            flex-wrap: wrap-reverse;
+        }
+        flex-wrap: wrap;
         gap: 70px;
         margin-top: 120px;
         &-left {
             flex: 1;
+            & > img {
+                min-width: 300px;
+            }
         }
         &-right {
             flex: 1;
+            @include breakpoint-down(small) {
+                text-align: center;
+            }
             & > h2 {
                 font-weight: 700;
                 font-size: 3rem;
                 line-height: 110%;
+                @include breakpoint-down(small) {
+                    font-size: 2rem;
+                }
                 & > span {
                     color: $primary-color;
                 }
@@ -76,14 +109,14 @@
             & > p {
                 font-style: normal;
                 font-weight: 450;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 160%;
                 color: $dark-text;
                 margin: 24px 0 40px 0;
                 max-width: 420px;
             }
             .communication-btn {
-                font-weight: 500;
+                font-weight: 400;
                 @include PrimaryBtn(8px);
                 padding: 16px 46px;
             }

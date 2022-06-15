@@ -1,5 +1,8 @@
 .news-letter {
     padding: 60px 0;
+    @include breakpoint-down(small) {
+        padding: 0 10px;
+    }
     &-wrapper {
         background-image: url("../../../assets/images/Nft.png");
         background-repeat: no-repeat;
@@ -10,15 +13,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include breakpoint-down(small) {
+            padding: 20px;
+            height: 400px;
+        }
         & > div {
             text-align: center;
             margin-bottom: 4rem;
+            @include breakpoint-down(small) {
+                margin-bottom: 0;
+            }
             & > h5 {
                 font-family: "coolvetica";
                 color: #fff;
                 font-weight: 400;
-                font-size: 48px;
+                font-size: 3rem;
                 line-height: 58px;
+                @include breakpoint-down(small) {
+                    line-height: 160%;
+                    font-size: 1.5rem;
+                }
             }
             & > p {
                 color: rgba(255, 255, 255, 0.4);
@@ -36,6 +50,10 @@
                 .email-input {
                     width: 280px;
                     height: 48px;
+                    @include breakpoint-down(small) {
+                        width: 170px;
+                        height: 28px;
+                    }
                     padding: 0 10px 0 15px;
                     border: none;
                     color: #fff;
@@ -48,6 +66,10 @@
                 & > span {
                     height: 48px;
                     width: 158px;
+                    @include breakpoint-down(small) {
+                        height: 38px;
+                        width: 105px;
+                    }
                     display: grid;
                     place-items: center;
                     border-radius: 8px;

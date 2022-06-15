@@ -58,7 +58,7 @@ const CommunicationSystem = () => {
             </div>
             <div className="communication-system-bottom">
                 <div className="communication-system-bottom-left">
-                    <img src={mokup} alt="" />
+                    <img src={mokup} alt="" width="100%" />
                 </div>
                 <div className="communication-system-bottom-right">
                     <h2>
